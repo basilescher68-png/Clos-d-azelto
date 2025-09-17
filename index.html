@@ -3,155 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clos d’Azelto – Vin Corse Typique | Domaine Azelto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
+            background-color: #f4f4f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            line-height: 1.6;
-            background-color: #800020;   
+            color: #333;
         }
-        .header h1 {
-            margin: 0;   
-        }
+
         .container {
             max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-            flex: 1;
-            min-width: 300px;
+            margin: 0 auto;
             padding: 20px;
+        }
+
+        .product-header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            flex: 1;
             text-align: center;
         }
-        .bottle-section img {
+
+        .product-image img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
-        .description-section {
-            flex: 2;
-            min-width: 300px;
-            padding: 20px;
+
+        .product-info {
+            flex: 1;
         }
+
+        .product-title {
+            font-size: 2.2em;
+            color: #8e44ad;
+            margin-bottom: 10px;
+        }
+
+        .product-subtitle {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
         .rating {
-            color: #FFD700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .stars {
+            color: #f39c12;
+        }
+
+        .price {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .add-to-cart {
+            background-color: #8e44ad;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #732d91;
+        }
+
+        .reviews-section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .reviews-title {
             font-size: 1.5em;
-            margin: 10px 0;
+            margin-bottom: 20px;
+            color: #8e44ad;
         }
-        .reviews {
-            margin-top: 20px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
+
         .review {
-            margin-bottom: 15px;
-            padding-bottom: 15px;
             border-bottom: 1px solid #eee;
+            padding: 15px 0;
         }
+
         .review:last-child {
             border-bottom: none;
         }
-        .reviewer {
+
+        .reviewer-name {
             font-weight: bold;
-            color: #800020;
+            color: #8e44ad;
         }
-        .food-pairing {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+        .review-stars {
+            color: #f39c12;
+            margin-left: 10px;
         }
-        .food-pairing h2 {
-            color: #800020;
-        }
-        .dish {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        .dish img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 15px;
-        }
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
+
+        .review-text {
+            margin-top: 5px;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Clos d'Azelto</h1>
-        <p>Vin Corse d'Exception</p>
-    </div>
     <div class="container">
-        <div class="bottle-section">
-            <img src="https://via.placeholder.com/400x800/800020/FFFFFF?text=Clos+d'Azelto" alt="Bouteille de Clos d'Azelto">
-        </div>
-        <div class="description-section">
-            <h2>Un vin corse d'exception</h2>
-            <p>
-                Le <strong>Clos d'Azelto</strong> est un vin rouge corsé, issu des cépages traditionnels de Corse, cultivés sur les pentes ensoleillées de la région. Son bouquet complexe allie des notes de fruits rouges mûrs, d'épices douces et une touche de maquis, typique de son terroir méditerranéen.
-            </p>
-            <p>
-                Idéal pour les amateurs de vins puissants et élégants, le Clos d'Azelto saura sublimer vos repas et vos moments de partage.
-            </p>
-            <div class="rating">
-                ★★★★★ 4.7/5 (Note Google)
+        <div class="product-header">
+            <div class="product-image">
+                <!-- Remplace le lien par l'URL de ton image -->
+                <img src="https://via.placeholder.com/500x600?text=Clos+d%27Azelto" alt="Bouteille de Clos d’Azelto">
             </div>
-            <div class="reviews">
-                <h3>Avis des clients</h3>
-                <div class="review">
-                    <div class="reviewer">Wang L. (Shanghai)</div>
-                    <p>"Un vin puissant et équilibré, parfait avec un canard laqué. J'ai été agréablement surpris par sa complexité."</p>
+            <div class="product-info">
+                <h1 class="product-title">Clos d’Azelto</h1>
+                <p class="product-subtitle">Vin Rouge AOP Corse – Cuvée Prestige</p>
+                <div class="rating">
+                    <span class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
+                    <span>4.7/5 (128 avis)</span>
                 </div>
-                <div class="review">
-                    <div class="reviewer">Li M. (Pékin)</div>
-                    <p>"Le Clos d'Azelto accompagne à merveille les plats épicés du Sichuan. Une belle découverte !"</p>
+                <p class="price">39,90 €</p>
+                <p class="description">
+                    Le Clos d’Azelto est un vin corse d’exception, issu de vignes cultivées sur les coteaux ensoleillés de l’île de Beauté.
+                    Ce vin rouge allie puissance et élégance, avec des arômes de fruits rouges, d’épices et une touche de maquis.
+                    Parfait pour accompagner des plats méditerranéens ou des fromages affinés.
+                </p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+        </div>
+
+        <div class="reviews-section">
+            <h2 class="reviews-title">Avis Clients</h2>
+            <div class="review">
+                <div>
+                    <span class="reviewer-name">Jean-Marc L.</span>
+                    <span class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
                 </div>
-                <div class="review">
-                    <div class="reviewer">Zhang W. (Hong Kong)</div>
-                    <p>"Excellente bouteille, livraison rapide en Chine. Je recommande pour les dîners entre amis."</p>
+                <p class="review-text">
+                    Un vin d’une grande complexité, avec une belle longueur en bouche. J’ai adoré !
+                </p>
+            </div>
+            <div class="review">
+                <div>
+                    <span class="reviewer-name">Sophie R.</span>
+                    <span class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
                 </div>
+                <p class="review-text">
+                    Très bon rapport qualité-prix. Parfait avec un plateau de charcuterie corse.
+                </p>
+            </div>
+            <div class="review">
+                <div>
+                    <span class="reviewer-name">Pierre D.</span>
+                    <span class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </span>
+                </div>
+                <p class="review-text">
+                    Un classique corse, toujours aussi bon. À découvrir absolument.
+                </p>
             </div>
         </div>
-    </div>
-    <div class="food-pairing container">
-        <h2>Accords mets chinois</h2>
-        <p>Découvrez les plats chinois qui subliment le Clos d'Azelto :</p>
-        <div class="dish">
-            <img src="https://via.placeholder.com/80/800020/FFFFFF?text=Canard" alt="Canard laqué">
-            <div>
-                <h4>Canard laqué</h4>
-                <p>Le sucré et le croustillant du canard laqué contrastent parfaitement avec les tanins du Clos d'Azelto.</p>
-            </div>
-        </div>
-        <div class="dish">
-            <img src="https://via.placeholder.com/80/800020/FFFFFF?text=Boeuf" alt="Boeuf aux épices">
-            <div>
-                <h4>Bœuf aux épices du Sichuan</h4>
-                <p>Les épices relevées du Sichuan sont adoucies par la rondeur du vin, créant un équilibre parfait.</p>
-            </div>
-        </div>
-        <div class="dish">
-            <img src="https://via.placeholder.com/80/800020/FFFFFF?text=Champignons" alt="Champignons sautés">
-            <div>
-                <h4>Champignons sautés à l'ail</h4>
-                <p>Un plat végétarien qui met en valeur les arômes terreux du Clos d'Azelto.</p>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <p>© 2025 Clos d'Azelto - Tous droits réservés</p>
     </div>
 </body>
 </html>
-
