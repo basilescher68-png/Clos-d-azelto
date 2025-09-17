@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clos d’Azelto – Vin Corse d’Exception</title>
+    <title>阿泽托庄园 - 科西嘉岛红酒</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -16,12 +16,12 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
             background-color: var(--secondary-color);
             margin: 0;
             padding: 0;
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         .container {
@@ -30,7 +30,6 @@
             padding: 20px;
         }
 
-        /* Section produit */
         .product-section {
             background: white;
             padding: 30px;
@@ -78,7 +77,7 @@
 
         .description {
             margin-bottom: 20px;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         .wine-info {
@@ -116,7 +115,6 @@
             background: #732d91;
         }
 
-        /* Style UNIFORME pour les sections "Avis Clients" et "Accords mets & vins" */
         .content-section {
             background: white;
             padding: 30px;
@@ -142,40 +140,38 @@
             margin: 10px auto;
         }
 
-        /* Style pour les AVIS CLIENTS */
-        .review {
+        .review, .food-pairing-item {
             border-bottom: 1px solid #eee;
             padding: 20px 0;
             display: flex;
             align-items: flex-start;
         }
 
-        .review:last-child {
+        .review:last-child, .food-pairing-item:last-child {
             border-bottom: none;
         }
 
-        .reviewer-info {
+        .reviewer-info, .food-pairing-icon {
             margin-right: 15px;
             min-width: 150px;
         }
 
-        .reviewer-name {
+        .reviewer-name, .food-pairing-name {
             font-weight: bold;
             color: var(--primary-color);
             display: block;
         }
 
-        .review-stars {
+        .review-stars, .food-pairing-stars {
             color: #f39c12;
             margin-top: 5px;
         }
 
-        .review-text {
+        .review-text, .food-pairing-content {
             flex: 1;
             padding-left: 10px;
         }
 
-        /* Style pour les ACCORDS METS & VINS (identique aux avis) */
         .food-pairing-image {
             text-align: center;
             margin-bottom: 30px;
@@ -194,25 +190,6 @@
             color: #666;
         }
 
-        .food-pairing-item {
-            border-bottom: 1px solid #eee;
-            padding: 20px 0;
-            display: flex;
-            align-items: flex-start;
-        }
-
-        .food-pairing-item:last-child {
-            border-bottom: none;
-        }
-
-        .food-pairing-icon {
-            color: var(--primary-color);
-            margin-right: 15px;
-            font-size: 1.2em;
-            margin-top: 2px;
-            min-width: 20px;
-        }
-
         .food-pairing-content h4 {
             margin: 0 0 5px 0;
             color: var(--primary-color);
@@ -224,105 +201,127 @@
             color: #555;
         }
     </style>
+    <!-- Ajout de la police chinoise Noto Sans SC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <!-- Section produit -->
+        <!-- 产品信息 -->
         <div class="product-section">
             <div class="product-image">
-                <img src="shopping.jpg" alt="Bouteille de Clos d’Azelto">
+                <img src="shopping.jpg" alt="阿泽托庄园红酒">
             </div>
             <div class="product-info">
-                <h1 class="product-title">Clos d’Azelto</h1>
-                <p>Vin Rouge AOP Corse – Cuvée Prestige</p>
+                <h1 class="product-title">阿泽托庄园</h1>
+                <p>科西嘉岛AOP红酒 - 珍藏版</p>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
-                    <span>4.7/5 (128 avis)</span>
+                    <span>4.7/5 (128条评价)</span>
                 </div>
-                <p class="price">39,90 €</p>
+                <p class="price">¥250</p>
                 <p class="description">
-                    Le Clos d’Azelto est un vin corse d’exception, issu de vignes cultivées sur les coteaux ensoleillés de l’île de Beauté.
-                    Ce vin rouge allie puissance et élégance, avec des arômes de fruits rouges, d’épices et une touche de maquis.
-                    Parfait pour accompagner des plats méditerranéens ou des fromages affinés.
+                    阿泽托庄园红酒产自科西嘉岛阳光明媚的山坡，是一款卓越的科西嘉岛红酒。它将力量与优雅完美结合，散发着红色水果、香料和马基斯灌木的芳香。非常适合搭配地中海菜肴或熟成奶酪。
                 </p>
 
                 <div class="wine-info">
-                    <h3>Informations sur le vin</h3>
-                    <p><strong>Domaine viticole :</strong> Clos d'Alzeto</p>
-                    <p><strong>Cépages :</strong> Grenache, Carignan, Nielluccio, Sciacarello</p>
-                    <p><strong>Région :</strong> France / Corse / Ajaccio</p>
-                    <p><strong>Style de vin :</strong> French Corsica Red</p>
-                    <p><strong>Teneur en alcool :</strong> 13 %</p>
-                    <p><strong>Allergènes :</strong> Contient : sulfites</p>
+                    <h3>酒款信息</h3>
+                    <p><strong>酒庄:</strong> 阿泽托庄园</p>
+                    <p><strong>葡萄品种:</strong> 歌海娜、佳丽酿、尼埃鲁乔、希雅赫雷罗</p>
+                    <p><strong>产区:</strong> 法国/科西嘉岛/阿雅克肖</p>
+                    <p><strong>酒款类型:</strong> 科西嘉岛红酒</p>
+                    <p><strong>酒精度:</strong> 13%</p>
+                    <p><strong>过敏原:</strong> 含亚硫酸盐</p>
                 </div>
 
-                <button class="add-to-cart">Ajouter au panier</button>
+                <button class="add-to-cart">加入购物车</button>
             </div>
         </div>
 
-        <!-- SECTION ACCORDS METS & VINS (même style que "Avis Clients") -->
+        <!-- 美食搭配 -->
         <div class="content-section">
-            <h2>Accords mets & vins</h2>
+            <h2>美食搭配</h2>
             <div class="food-pairing-image">
-                <!-- Remplace "chinese-food.jpg" par ton image -->
-                <img src="chinese-food.jpg" alt="Plats chinois recommandés avec le Clos d’Azelto">
+                <img src="chinese-food.jpg" alt="适合搭配阿泽托红酒的中餐">
             </div>
             <p class="food-pairing-intro">
-                Le Clos d’Azelto rouge, avec ses notes de fruits rouges et d’épices, se marie à merveille avec la cuisine chinoise.
+                阿泽托红酒以其红色水果和香料的风味，与中餐的搭配堪称完美。以下是我们的推荐：
             </p>
 
-            <!-- Liste des accords (même structure que les avis) -->
             <div class="food-pairing-item">
-                <div class="food-pairing-icon">
-                    <i class="fas fa-drumstick-bite"></i>
+                <div class="reviewer-info">
+                    <span class="food-pairing-name">北京烤鸭</span>
+                    <span class="food-pairing-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
                 </div>
                 <div class="food-pairing-content">
-                    <h4>Canard laqué</h4>
-                    <p>Les tanins souples du vin équilibrent la douceur du canard, créant un accord riche et élégant.</p>
+                    <p>酒中的柔和单宁和红色水果风味与烤鸭的甜美完美平衡，创造出丰富而优雅的搭配。</p>
                 </div>
             </div>
 
             <div class="food-pairing-item">
-                <div class="food-pairing-icon">
-                    <i class="fas fa-carrot"></i>
+                <div class="reviewer-info">
+                    <span class="food-pairing-name">青椒牛柳</span>
+                    <span class="food-pairing-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
                 </div>
                 <div class="food-pairing-content">
-                    <h4>Bœuf aux brocolis</h4>
-                    <p>Les épices du vin relèvent la sauce soja et adoucissent l’intensité du bœuf.</p>
+                    <p>酒中的香料味道提升了酱油的风味，同时柔化了牛肉的强烈口感，非常和谐。</p>
                 </div>
             </div>
 
             <div class="food-pairing-item">
-                <div class="food-pairing-icon">
-                    <i class="fas fa-cookie"></i>
+                <div class="reviewer-info">
+                    <span class="food-pairing-name">蒸饺</span>
+                    <span class="food-pairing-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
                 </div>
                 <div class="food-pairing-content">
-                    <h4>Raviolis vapeur</h4>
-                    <p>La texture moelleuse des raviolis se marie parfaitement avec la rondeur du vin.</p>
+                    <p>饺子的柔软口感与酒的圆润度完美匹配，而中式香料与酒中的香料风味相得益彰。</p>
                 </div>
             </div>
 
             <div class="food-pairing-item">
-                <div class="food-pairing-icon">
-                    <i class="fas fa-bacon"></i>
+                <div class="reviewer-info">
+                    <span class="food-pairing-name">叉烧包</span>
+                    <span class="food-pairing-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
                 </div>
                 <div class="food-pairing-content">
-                    <h4>Porc char siu</h4>
-                    <p>Le côté fruité du vin complète la caramelisation du porc, pour un accord gourmand.</p>
+                    <p>酒中的果香和微微的胡椒味与叉烧的焦糖化风味形成美妙搭配，带来美味的享受。</p>
                 </div>
             </div>
         </div>
 
-        <!-- Section avis clients (inchangée) -->
+        <!-- 客户评价 -->
         <div class="content-section">
-            <h2>Avis Clients</h2>
+            <h2>客户评价</h2>
             <div class="review">
                 <div class="reviewer-info">
-                    <span class="reviewer-name">Jean-Marc L.</span>
+                    <span class="reviewer-name">王先生</span>
                     <span class="review-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -332,12 +331,12 @@
                     </span>
                 </div>
                 <div class="review-text">
-                    <p>Un vin d’une grande complexité, avec une belle longueur en bouche. J’ai adoré ! Parfait avec un magret de canard.</p>
+                    <p>这是一款复杂度极高的红酒，口感持久。我非常喜欢！特别适合搭配北京烤鸭。</p>
                 </div>
             </div>
             <div class="review">
                 <div class="reviewer-info">
-                    <span class="reviewer-name">Sophie R.</span>
+                    <span class="reviewer-name">李女士</span>
                     <span class="review-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -347,7 +346,7 @@
                     </span>
                 </div>
                 <div class="review-text">
-                    <p>Très bon rapport qualité-prix. J’ai été agréablement surprise par son équilibre. À découvrir absolument avec des plats épicés.</p>
+                    <p>性价比非常高。这款酒的平衡性让我感到惊喜。强烈推荐与香料菜肴搭配。</p>
                 </div>
             </div>
         </div>
